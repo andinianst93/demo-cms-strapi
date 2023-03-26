@@ -4,7 +4,8 @@
   "info": {
     "singularName": "akademi",
     "pluralName": "akademis",
-    "displayName": "akademi"
+    "displayName": "akademi",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,11 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson"
     }
   }
 }
