@@ -25,6 +25,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "category"
+    },
+    "beritas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::berita.berita",
+      "mappedBy": "category"
     }
   }
 }

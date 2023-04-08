@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * akademi router
+ * berita router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::akademi.akademi');
+module.exports = createCoreRouter('api::berita.berita');
