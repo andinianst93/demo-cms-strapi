@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adncategories",
+  "info": {
+    "singularName": "adncategory",
+    "pluralName": "adncategories",
+    "displayName": "adncategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "canonical": {
+      "type": "uid"
+    },
+    "adnposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::adnpost.adnpost",
+      "mappedBy": "adncategory"
+    }
+  }
+}

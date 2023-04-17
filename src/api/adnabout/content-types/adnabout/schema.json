@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "adnabouts",
+  "info": {
+    "singularName": "adnabout",
+    "pluralName": "adnabouts",
+    "displayName": "adnabout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "canonical": {
+      "type": "uid"
+    }
+  }
+}

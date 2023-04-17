@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adnposts",
+  "info": {
+    "singularName": "adnpost",
+    "pluralName": "adnposts",
+    "displayName": "adnpost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "canonical": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "adncategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::adncategory.adncategory",
+      "inversedBy": "adnposts"
+    }
+  }
+}
