@@ -45,6 +45,12 @@
       "relation": "manyToOne",
       "target": "api::adncategory.adncategory",
       "inversedBy": "adnposts"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "adnposts"
     }
   }
 }
