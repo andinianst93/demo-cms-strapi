@@ -46,6 +46,14 @@
       "relation": "oneToMany",
       "target": "api::adnpost.adnpost",
       "mappedBy": "author"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "canonical": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
