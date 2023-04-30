@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "adnmediasibers",
+  "info": {
+    "singularName": "adnmediasiber",
+    "pluralName": "adnmediasibers",
+    "displayName": "adnmediasiber"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "canonical": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
