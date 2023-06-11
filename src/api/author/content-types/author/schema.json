@@ -29,18 +29,6 @@
         "audios"
       ]
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "author"
-    },
-    "beritas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::berita.berita",
-      "mappedBy": "author"
-    },
     "adnposts": {
       "type": "relation",
       "relation": "oneToMany",
